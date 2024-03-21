@@ -1,0 +1,20 @@
+/* imported */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/* custom properties */
+:root{
+  --co-site-green:#00a37e;
+}
+
+
+/* main props */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  min-height: 100%;
+  font-family: 'Lato','open sans';
+  font-size: 16px;
+}
