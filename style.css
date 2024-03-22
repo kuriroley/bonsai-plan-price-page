@@ -15,11 +15,11 @@ a{
   color: black;
 }
 
-
-/* main props */
+/* global settings */
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -30,39 +30,57 @@ body{
   font-weight: 400;
 }
 
-.nav-bar{
-  padding: 1em 4em ;
-  display: flex;
+img{
+  border: 0;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* content settings */
+
+.navbar{
   position: sticky;
   left: 0;
   top: 0;
   right: 0;
   bottom: auto;
-  z-index: 100000000;
-  background-color: #fff;
-  justify-content: space-between;
-  align-items: center;
 }
-.logo{
+.large-container{
+  width: 100%;
+  max-width: 70rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.logo{
+  top: 12px;
+  position: relative;
+  float: left;
+  text-decoration: none;
 }
-.right-nav-elements{
+.navigation{
   display: flex;
-  gap: 5em;
+  width: 100%;
+  max-width: 70%;
+  justify-content: flex-end;
   align-items: center;
-  
+  position: relative;
+  float: right;
 }
-.list-items{
+.left-nav-elements{
   display: flex;
-  gap: 3em;
-  font-size: 1.2em;
-  color: white;
+  margin-right: 5%;
+  justify-content: space-between;
 }
+
+
+
+
 .nav-list-buttons{
   display: flex;
   gap: 3em;
 }
-
 .nav-button{
   text-align: center;
   padding: 0.5em 0.5em;
